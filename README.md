@@ -1,2 +1,2 @@
-# COSC1078-BasicTemplate
-COSC1078 - BasicTemplate for student use.
+# COSC1078-Assignment 1
+A basic site built with html and css containing student information.

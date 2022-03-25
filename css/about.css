@@ -54,6 +54,7 @@ h2 {
     font-weight: normal;
     padding: 5px;
     display: inline-block;
+    margin: -4px;
     width: auto;
 }
 
@@ -74,6 +75,12 @@ h3 {
 a {
     text-decoration: none;
     color: var(--font-color);
+}
+
+.right {
+  position: relative; /* the fixed pos makes it work */
+  right: -8.5px;/*how much you want to move it right
+    put % or px or rem at end of the amount */;
 }
 
 .footer {
@@ -158,6 +165,7 @@ font-size: 30px;
   padding: 5px 5px;
   text-align: center;
   display:inline-block;
+  margin: -4px;
 }
 
 .links a:hover {
@@ -223,6 +231,7 @@ input[type='checkbox'] {
 
 .lbl-toggle:hover::before, .lbl-toggle:hover::after {
   display:inline-block;
+  margin: -4px;
   transition: transform .3s ease-out;
 }
 
@@ -240,6 +249,7 @@ input[type='checkbox'] {
 
 .toggle:checked + .lbl-toggle::before, .toggle:checked + .lbl-toggle::after {
   display:inline-block;
+  margin: -4px;
   transform: rotate(180deg) translateY(-1.5px) translateX(1px);
 }
 
@@ -297,6 +307,7 @@ input[type='checkbox'] {
     background-color: var(--secondary-color);
     color: var(--bg-color);
     display: inline-block;
+    margin: -4px;
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;

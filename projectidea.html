@@ -27,9 +27,11 @@
   <meta name="Description" content="Oogabooga About page">
   <meta name="Lord" content="Tyson Dai (S3947599)">
 
-  <link rel="stylesheet" href="css\about.css">
+  <link rel="stylesheet" href="css\projidea.css">
   <link href="https://fonts.googleapis.com/css?family=Mono&amp;display=swap" rel="stylesheet">
 </head>
+
+
   <!--blocksidescroll-->
   <div class="sidebar">
   </div>
@@ -44,7 +46,9 @@
 
 <hr>
 </hr>
-<!--body Overview-->
+<!--body Overview--><!--fix alignment-->
+<div class="right">
+
 <div class="collapsible-wrapper" style="padding: 10px; margin: 5px">
   <input id="collapsible-overview" class="toggle" type="checkbox">
   <label for="collapsible-overview" class="lbl-toggle" style="padding: 5px 5px;"> OVERVIEW </label>
@@ -59,17 +63,17 @@
       <p>  a)	Activate upon the detection of a user in front of the mirror (motion detection will likely be used) </p>
       <p>  b)	Collect and display important daily information such as the weather, current news events or user chosen news topics. </p>
       <p>  c)	Use the collected data to help the user determine the best course of action for skincare and clothing-choice for any given day. </p>
-        Its also intended for the product to have user customizability and personalization options which can be controlled using the matching mobile application which allows the user to adjust and alter the location of widgets, etc.
-
+      <p>
+      Its also intended for the product to have user customizability and personalization options which can be controlled using the matching mobile application which allows the user to adjust and alter the location of widgets, etc.
       </p>
     </div>
   </div>
 </div>
 
 <!--body Motivation-->
-<div class="collapsible-wrapper" style="padding: 10px; margin: 5px;">
+<div class="collapsible-wrapper" style="padding: 10px; margin: 5px">
   <input id="collapsible-motivation" class="toggle" type="checkbox">
-  <label for="collapsible-motivaiton" class="lbl-toggle" style="padding: 5px 5px;"> MOTIVATION </label>
+  <label for="collapsible-motivation" class="lbl-toggle" style="padding: 5px 5px;"> MOTIVAITON </label>
   <div class="collapsible-content">
     <div class="gap-7"></div>
     <div class="body">
@@ -77,12 +81,99 @@
         Motivation
       </h4>
       <p>
-        Although many people have access to so much information in the palm of their hands, not all these people have the time or patience to go through multiple sites and google searches just to find this information. I believe this product will help eliminate the hassle by collecting and displaying information for the user with recommendations on clothing choice and skincare choices based on the collected information. Moreover, with the recent event of Covid-19 and its ‘lockdowns’ there has been a surge in the popularity of the already rapidly growing selfcare and skincare markets meaning more people are realizing the importance of selfcare and skincare this is evident in Morder Intelligence’s market report labelled <i>“Australia skin care products market – growth, trends, covid-19 impact, and forecasts (2022-2027)”</i> This is important because while there is a growth in the market it means there are also more people who simply use skincare products without a second thought because it might’ve been recommended to them by another person rather than having recommendations given based on user input and data. Another reason for this project is to reduce the screen usage time when waking up as I know many struggle with always checking their phone in the morning, this project will help to reduce the screen usage time by providing another method of getting the information you need to go throughout your day.
+        Although many people have access to so much information in the palm of their hands, not all these people have the time or patience to go through multiple sites and google searches just to find this information. I believe this product will help eliminate the hassle by collecting and displaying information for the user with recommendations on clothing choice and skincare choices based on the collected information. Moreover, with the recent event of Covid-19 and its ‘lockdowns’ there has been a surge in the popularity of the already rapidly growing selfcare and skincare markets meaning more people are realizing the importance of selfcare and skincare this is evident in Morder Intelligence’s market report labelled <i><b>“Australia skin care products market – growth, trends, covid-19 impact, and forecasts (2022-2027)”</b></i> This is important because while there is a growth in the market it means there are also more people who simply use skincare products without a second thought because it might’ve been recommended to them by another person rather than having recommendations given based on user input and data. Another reason for this project is to reduce the screen usage time when waking up as I know many struggle with always checking their phone in the morning, this project will help to reduce the screen usage time by providing another method of getting the information you need to go throughout your day.
       </p>
     </div>
   </div>
 </div>
 
+<!--body Description-->
+<div class="collapsible-wrapper" style="padding: 10px; margin: 5px">
+  <input id="collapsible-description" class="toggle" type="checkbox">
+  <label for="collapsible-description" class="lbl-toggle" style="padding: 5px 5px;"> DESCRIPTION </label>
+  <div class="collapsible-content">
+    <div class="gap-7"></div>
+    <div class="body">
+      <h4>
+        Description
+      </h4>
+        <p>
+        As described briefly in the overview, the product has 3 main functions:
+        </p>
+
+        <h4> FIRST </h4>
+        <p>
+        First, the product should activate when it detects a user in front of it. There are several ways to implement this function including the use of Video, infrared light, sounds, kinetic energy, etc. The method most suitable for this product is likely to be infrared light or Visible light. I will most likely use visible light such as a video camera as it not only provides the function of motion detection but can also provide important and more accurate data on the movement of the user and therefore is better future proofing as it provides an avenue for more features to be added later down the life of the product if needed. Using a camera will also make it possible to add features such as gesture control and can assist in the products function of providing advice on clothing choice and skincare choice by analyzing image data and processing it into sensible information which can be shown to the user.
+        </p>
+
+        <h4> SECOND</h4>
+        <p>
+        Second, the product will collect and display information on the weather and relevant news events. The collection of weather data is likely the simplest part as there are many ways to gather this data for free without the use of proprietary systems. One way weather information can be streamed is using weather API’s which are generally free to use, some examples include: OpenWeatherMap, Weatherbit, Accuweather and Tomorrow.io. Similarly, to weather APIs, there are also news APIs which can be used to collect and therefore display news to the user. These APIs are lightweight meaning they can be easily implemented in the product using something like Raspberry Pi and provide accurate weather forecasts, alerts, and conditions as well as the latest and up-to-date news for any given topic making them perfect for the product in question.
+        </p>
+
+        <h4> THRID</h4>
+        <p>
+        Third, the product should use and/or collect the appropriate data to provide the user with recommendations on daily clothing choice and skin-care choice. The former would be the easier of the two to implement as we can easily provide clothing suggestions based on weather information such as temperature, humidity, wind speed and precipitation which would have already been collected using the aforementioned weather APIs. Using the weather data, we can make suggestions such as wearing warmer clothes due to lower temperature or bringing an umbrella due to the precipitation predictions. For any given day. The latter function of providing skin-care advice is the more difficult of the two as while it is easy to say something like “put on sunscreen, it’s sunny” it’s very difficult to provide precise advice and information about the health of a person’s skin. One solution may be to use some AI to analyze an image and output information based on the AI’s analysis, while this is doable it would take a large amount of R&D to produce something tangibly accurate and precise enough to match the needs of each individual user as we would also have to take into consideration different skin-types and user needs.
+        </p>
+
+      <p style="padding-top: 20px;">
+        Those are the three main functions of the product. Some auxiliary features that should be considered after the main functions have been implemented is user personalization and customization. Many people of our target audience value the aesthetics of products and often that can be a dealbreaker, so it is important that user personalization and customization are available whether that be using an external control such as a smart phone or a remote or through inbuilt controls like a side panel or touch screen type control. Voice control should also be considered as it is a relatively simple implementation in which we can use an AI API such as Google Assistant which will use a microphone input to catch voice commands.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--body Tools and tech-->
+<div class="collapsible-wrapper" style="padding: 10px; margin: 5px">
+  <input id="collapsible-tandt" class="toggle" type="checkbox">
+  <label for="collapsible-tandt" class="lbl-toggle" style="padding: 5px 5px;"> TOOLS AND TECH </label>
+  <div class="collapsible-content">
+    <div class="gap-7"></div>
+    <div class="body">
+      <h4>
+        Tools and technology
+      </h4>
+      <p>
+        The required tools for prototyping would include simple carpentry tools such as drills, saws etc. We would also require access to a computer with which I will use VS code as that is my preferred software for coding. Hardware required would include a mirror, a frame and a monitor, as well as a Raspberry Pi on which the mirror will operate on. I will likely use glass on which I will attach one-way glass onto rather than using a fully opaque mirror. I have also thought about the possibility of water proofing using an ‘o-ring’ like seal around the frame to prevent moisture from entering the product and therefore prevent damage. For prototyping it could be desirable to have access to a 3D printer for more rapid prototyping.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--body Skills-->
+<div class="collapsible-wrapper" style="padding: 10px; margin: 5px">
+  <input id="collapsible-skills" class="toggle" type="checkbox">
+  <label for="collapsible-skills" class="lbl-toggle" style="padding: 5px 5px;"> SKILLS AND TALENT </label>
+  <div class="collapsible-content">
+    <div class="gap-7"></div>
+    <div class="body">
+      <h4>
+        Skills and talent required
+      </h4>
+      <p>
+        The skills required include some hands-on skills with DIY projects of which is not difficult to find, and skills in the use of Raspberry Pi and several programming languages, which is also feasible. The most difficult part would be the ‘skin-care’ feature which if we are being ambitious would require personnel with experience in AI programming and image processing, which I believe is likely not as feasible and this function will likely not be implemented in the first iteration prototype. The hardware is the easiest part as all the required tools and technology are easily available online and in stores.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--body Outcome-->
+<div class="collapsible-wrapper" style="padding: 10px; margin: 5px">
+  <input id="collapsible-outcome" class="toggle" type="checkbox">
+  <label for="collapsible-outcome" class="lbl-toggle" style="padding: 5px 5px;"> OUTCOME</label>
+  <div class="collapsible-content">
+    <div class="gap-7"></div>
+    <div class="body">
+      <h4>
+        Project Outcome
+      </h4>
+      <p>
+        If the project is successful, the product will improve daily lives by changing the way we wake up every day and instead of waking up to our phones we will wake up to the mirror and all the information you need is already there therefore reducing phone screen time in the morning. Overall, the project will help reduce the time it takes to get ready after waking up and will also benefit the user’s eye health and possibly even mental health by reducing the need to check one’s phone in the morning.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
 <hr>
 </hr>
 
@@ -92,3 +183,14 @@
     <p style = "padding: 20px 5px;"><a href="index.html">HOME</a> </p>
   </section>
 </div>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer">
+      <h5 style = "padding: 25px 25px;"> Oogabooga</h5>
+    </div>
+    <div class="footer2">
+      <h6 style = "padding: 25px 25px;">site made by <a style="font-size: 10px;" href="https://www.instagram.com/ty.daaii/"><u>this person</u></a></h6>
+    </div>
+  </footer>
+</html>

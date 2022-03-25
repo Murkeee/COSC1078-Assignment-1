@@ -20,6 +20,15 @@
     text-align: center;
 }
 
+hr {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 0.2px;
+    background-color: var(--secondary-color);
+}
 body {
     background-color: var(--bg-color);;
     color: var(--font-color);
@@ -38,23 +47,17 @@ h1 {
 }
 
 h2 {
-    color: var(--bg-color);
+    color: var(--primary-color);
     font-size: 12.5px;
+    text-align: center;
     text-transform: uppercase;
     font-weight: normal;
-    background-color: var(--font-color);
     padding: 5px;
     display: inline-block;
+    margin: -4px;
     width: auto;
 }
 
-h2:after {
-    content: ' <'
-}
-
-h2:before {
-    content: '> '
-}
 
 
 h3 {
@@ -87,12 +90,19 @@ h6 {
   text-transform: uppercase;
   font-size: 10px
 }
+/* TO FIX ALIGNMENT */
+.right {
+  position: static;
+  right: -8.5px;
+}
+
 .footer {
   width: 300px;
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5vh;
+  font-size: 10px;
   }
 
 .footer2 {
@@ -101,16 +111,27 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20vh;
+  font-size: 8px;
   }
 
 .headermain {
-  width: 300px;
-  margin-top: 10vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5vh;
-  font-size: 20px;
-  }
+margin-top: 10vh;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5vh;
+font-size: 20px;
+}
+
+.body {
+width: 50%;
+margin-top: 2vh;
+margin-bottom: 2vh;
+text-align: center;
+vertical-align: center;
+font-size: 12px;
+margin: 0 auto;
+}
+
 
 .main {
 width: 100%;
@@ -120,16 +141,6 @@ margin-right: auto;
 margin-bottom: 2vh;
 font-size: 30px;
 }
-/* FIXED NAVIGATION FOR FUTURE IMPLEMENTAITON
-.fixednav {
-  display:block;
-  top: 43vh;
-  left: calc(50% - 240px);
-  width:55px;
-  z-index:2;
-  position:fixed;
-
-}*/
 
 .topbar {
     overflow: hidden;
@@ -167,6 +178,7 @@ font-size: 30px;
   padding: 5px 5px;
   text-align: center;
   display:inline-block;
+  margin: -4px;
 }
 
 .links a:hover {
@@ -198,15 +210,6 @@ font-size: 30px;
 
 }
 
-.faq p {
-  text-align: left;
-}
-
-.faq a {
-  text-decoration: underline;
-}
-
-
 /* Collapsible Content */
 
 input[type='checkbox'] {
@@ -232,6 +235,7 @@ input[type='checkbox'] {
 
 .lbl-toggle:hover::before, .lbl-toggle:hover::after {
   display:inline-block;
+  margin: -4px;
   transition: transform .3s ease-out;
 }
 
@@ -249,6 +253,7 @@ input[type='checkbox'] {
 
 .toggle:checked + .lbl-toggle::before, .toggle:checked + .lbl-toggle::after {
   display:inline-block;
+  margin: -4px;
   transform: rotate(180deg) translateY(-1.5px) translateX(1px);
 }
 
@@ -285,7 +290,6 @@ input[type='checkbox'] {
   display:inline;
 }
 
-
 /* SIDEBAR */
 /* FOR DISABLE HORIZONTAL SCROLL*/
 
@@ -300,6 +304,7 @@ input[type='checkbox'] {
 
 /* DROP DOWN */
 /* UNUSED ON THIS PAGE
+
 
 .container {
   width: 150px;
@@ -469,8 +474,8 @@ content: '\25BC';
   width: 48%;
   text-align: center;
   padding: 5px;
-}*/
-
+}
+*/
 /*PHONE SCREEN*/
 
 @media screen and (max-width: 550px) {
